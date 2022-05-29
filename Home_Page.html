@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/Body.css">
+    <link rel="stylesheet" href="CSS/Forms.css">
+    <link href="CSS/Header_Footer.css" rel="stylesheet">
+
+
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- ============= Header COMPONENT ============== -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-center topnav">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-x" href=" Home_Page.html "><img class="rounded-circle " src="Images/logo.jpg " width="60 " height="60 " alt=" " /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav  w-100 justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="Home_Page.html"><i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Food_Menu.html"><i class="fa fa-fw fa-cutlery"></i>Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html"><i class="fa fa-fw fa-photo"></i>Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact_Us.html"><i class="fa fa-fw fa-phone-square"></i>Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Us.html"><i class="fa fa-fw fa-info-circle"></i>About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Table_Booking.html"><i class="fa fa-fw fa-calendar"></i>Book a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registration.html"><i class="fa fa-fw fa-address-book"></i>Registration</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ============= End Header COMPONENT ============== -->
+
+    <!-- ============= Container COMPONENT ============== -->
+    <!-- Begin page content -->
+
+    <div class="container" style="max-width: 90%">
+
+        <!--Cristine code-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <!-- <div class="numtext">1 / 4</div> -->
+                <a href="Circus_Events.html">
+                    <img src="Images/cimages/circus3.jpg" style="width:100%">
+                    <div class="text">
+                        <h5>Circus <br> Restaurant
+                        </h5>
+                        <p> <span>Circus is a unique and quirky <br>
+                        cabaret restaurant and cocktail bar <br>
+                        in the heart of Stockholm</span> </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numtext">2 / 4</div> -->
+                <a href="Circus_Events.html">
+                    <img src="Images/cimages/circus1.jpg" style="width:100%">
+                    <div class="text">
+                        <h5>Circus Show</h5>
+                        <p> <span>Expect the unexpected as you see <br>
+                        aerialists, contortionists, hand balancers, <br>
+                        fire-breathers, hula-hoopers <br>
+                        and much more. </span> </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numtext">3 / 4</div> -->
+                <a href="Circus_Events.html">
+                    <img src="Images/cimages/circus4.jpg" style="width:100%">
+                    <div class="text">
+                        <h5>Amazing Entertainment </h5>
+                        <p> <span>Circus is a restaurant and <br> show with a difference, brought to life by <br> amazing and outrageous pop-up circus.
+                    </span> </p>
+                    </div>
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <!-- <div class="numtext">4 / 4</div> -->
+                <a href="Circus_Events.html">
+                    <img src="Images/cimages/circus2.jpg" style="width:100%">
+                    <div class="text">
+                        <h5>Amazing <br>Food Menus</h5>
+                        <p> <span>Our highly popular Pan-Asian menu <br> 
+                        (vegan menu available) High quality food, <br> 
+                        amazing service and great entertainment.<br>
+                    </span> </p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <div style="text-align:right">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <div class="column" style="text-align:center">
+                    <button type="submit" id="circusbtn" class="fa fa-fw fa-calendar"> 
+                        <a href="Circus_Booking.html" class="link-light">  Book for Circus Show </a> </button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+
+        <br>
+
+        <!--Imran code    -->
+        <div class="container2">
+            <div class="i_wrap">
+                <!-- two column layout - Imran's Part-->
+
+                <section class="col1">
+                    <div>
+                        <a href="Food_Menu.html">
+                            <img class="imran_img" src="Images/food3.jpg">
+                        </a>
+                    </div>
+
+                </section>
+
+                <section class="col3">
+                    <div class="box_i">
+                        <h4 class="i_h4"> <a href="About_Us.html" class="link-light">About us </a></h4>
+                        <p class="imran_p">
+                            We are an amazing team of 5 people named, <br> Cristine, Kantha, Yuran and Mallika.
+                        </p>
+                    </div>
+                    <div class="box_i">
+                        <h4 class="i_h4">Advertisement</h4>
+
+                        <p class="imran_p">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            <br> Perferendis suscipit sit consectetur sequi, et corrupti d
+                            <br> <a href="Circus_Events.html" class="link-light"> Click here to see our upcoming Events</a>
+                        </p>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+
+        <!--  Kantha code -->
+
+        <div class="container container1">
+            <div class="row">
+                <div class="col_k col-md-4 col-sm-6">
+                    <div class="cls1">
+
+                        <h3 class="K_h3">Location</h3>
+                        <!-- <a href="https://www.google.com/maps/place/Restaurang+Drama" ><img class="K_img" src="/Images/map1.png " >
+                    </a> -->
+
+                        <iframe class="K_img" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8130.811787093761!2d18.0032353!3d59.3712965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb4fa1c22016095d9!2sRestaurang%20Drama!5e0!3m2!1sen!2sse!4v1649924606257!5m2!1sen!2sse"
+                            height="270px" width="410px" style="border-radius: 10px;"></iframe>
+                    </div>
+
+                </div>
+                <div class="col_k col-md-4 col-sm-6">
+                    <div class="cls1">
+                        <h3 class="K_h3">Events</h3>
+                        <a href="Circus_Events.html"><img class="K_img" src="Images/circus.jpg"></a>
+
+                    </div>
+                </div>
+                <div class="col_k col-md-4 col-sm-6">
+                    <div class="cls1">
+                        <h3 class="K_h3">Feedback</h3>
+                        <a href="Feedback.html"><img class="K_img" src="Images/feedback.jpeg"></a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ============= End Container COMPONENT ============== -->
+
+    <!-- ============= Footer COMPONENT ============== -->
+
+    <!--    Yuran code -->
+    <footer class="footer fixed-bottom">
+        <p class="pull-left ">©- 2022 : Circus Restaurant</p>
+        <div class="pull-right">
+            <div class="d-flex justify-content-end">
+                <a class="nav-link " href="https://www.facebook.com/login.php"><i class="fa fa-facebook "></i></a>
+                <a class="nav-link " href="https://twitter.com/i/flow/login"><i class="fa fa-twitter "></i></a>
+                <a class="nav-link " href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram "></i></a>
+                <a class="nav-link " href="https://www.youtube.com/"><i class="fa fa-youtube "></i></a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+<!-- JS for slideshow -->
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 6000); // Change image every 2 seconds
+    }
+</script>
+
+</html>

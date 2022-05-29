@@ -1,0 +1,543 @@
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=
+      "width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="FoodMenuEX.css">
+    <link rel="stylesheet" href="FoodMenuEX.js">
+
+    <link rel="stylesheet" href="CSS/Body.css">
+        <link rel="stylesheet" href="CSS/Forms.css">
+        <link href="CSS/Header_Footer.css" rel="stylesheet">
+
+
+        <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" rel="stylesheet">
+    <title>ORDER FOOD MENU</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        });
+    </script>
+
+    <script src="js/isotope.pkgd.min.js">
+    </script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+  <!-- ============= Header COMPONENT ============== -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-center topnav">
+  <div class="container-fluid">
+      <a class="navbar-brand navbar-brand-x" href=" Home_Page.html "><img class="rounded-circle " src="Images/logo.jpg " width="60 " height="60 " alt=" " /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+      <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav  w-100 justify-content-center">
+              <li class="nav-item ">
+                  <a class="nav-link " href="Home_Page.html"><i class="fa fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link " href="Food_Menu.html"><i class="fa fa-fw fa-cutlery"></i>Menu</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Gallery.html"><i class="fa fa-fw fa-photo"></i>Gallery</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Contact_Us.html"><i class="fa fa-fw fa-phone-square"></i>Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="About_Us.html"><i class="fa fa-fw fa-info-circle"></i>About Us</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav w-100 justify-content-end">
+              <li class="nav-item">
+                  <a class="nav-link" href="Table_Booking.html"><i class="fa fa-fw fa-calendar"></i>Book a Table</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a> 
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Registration.html"><i class="fa fa-fw fa-address-book"></i>Registration</a>
+              </li>
+          </ul>
+      </div>
+
+  </div>
+</nav>
+<!-- ============= End Header COMPONENT ============== -->
+
+<!-- ============= Container COMPONENT ============== -->
+  <!-- Begin page content -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" style="padding: 0px;width: 50%; height: 50%; justify-content: center; position: relative; margin: auto;">
+  <div class="hero-container" >
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active" style="background-image:url('Images/restaurant-bg-image1.jpg'); width: 100%; height: 100%; ">
+                  <div class="carousel-container">
+                      <div class="carousel-content">
+                          <h2 class="animate__animated animate__fadeInDown"><span>A Circus Eats Restaurant</span></h2>
+                          <p class="animate__animated animate__fadeInUp">To provide a professional, yet homely, style of hospitality that makes all guests, welcome and happy to be here. A warm meal, a comfortable place, a smile and pleasant attitude that can turn strangers into friends.</p>
+                          <div>
+                            <a href="Food_Menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                            <a href="Table_Booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                            <a href="#food_Menu" class="btn-book animate__animated animate__fadeInUp scrollto active">Order Food</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item" style="background-image: url('Images/restaurant-bg-image2.jpg'); width: 100%; height: 100%; ">
+                  <div class="carousel-container">
+                      <div class="carousel-content">
+                          <h2 class="animate__animated animate__fadeInDown">Delicious Restaurant</h2>
+                          <p class="animate__animated animate__fadeInUp"> Our restaurant was born out of love and respect for these humble deli creations, met with a desire to bring quality ingredients to the table. Simply put, we’re here to bring you a sandwich experience you can feel
+                              good about..
+                          </p>
+                          <div>
+                            <a href="Food_Menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                            <a href="Table_Booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                            <a href="#food_Menu" class="btn-book animate__animated animate__fadeInUp scrollto active">Order Food</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item" style="background-image: url('Images/retaurant-bg-image3.jpg'); width: 100%; height: 100%; ">
+                  <div class="carousel-container">
+                      <div class="carousel-content">
+                          <h2 class="animate__animated animate__fadeInDown">Delicious Restaurant</h2>
+                          <p class="animate__animated animate__fadeInUp">The authentic taste comes from family recipes and from fresh, simple and tasteful ingredients straight from home. In every recipe there is a bit of true culture and flavor</p>
+                          <div>
+                            <a href="Food_Menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                              <a href="Table_Booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                              <a href="#food_Menu" class="btn-book animate__animated animate__fadeInUp scrollto active">Order Food</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+              <span class="fa fa-arrow-left fa-stack-2x" aria-hidden="true"></span>
+          </a>
+
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+              <span class="fa fa-arrow-right fa-stack-2x" aria-hidden="true"></span>
+          </a>
+
+      </div>
+      
+  </div>
+</section>
+
+
+<!-- End Hero -->
+
+
+<!-- Food Menu part -->
+
+<!-- <div id="food_Menu" name="food_Menu" class="food_Menu" style="height: 100h;"> -->
+
+  <div style="display: inline; text-align: center; float: right; padding-top: 160px;">
+    <section class="container content-section" >
+      <h3 class=" order_h3 section-header">CART</h3>
+      <div class="cart-row">
+       <!--  <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span> -->
+    </div>
+      <div class="cart-items " >
+
+      </div>
+      <div class="cart-total pull-right" >
+          <strong class="cart-total-title" style="font-size: 22px;">TOTAL:</strong>
+          <span class="cart-total-price" style="font-size: 22px; font-weight: 700; margin-bottom: 50px;"> &nbsp; 0 Kr &nbsp;</span>
+      
+      <div class="btn pull-right" >
+      <button class="btn btn-primary btn-order " type="button" >ORDER</button>
+      </div>
+    </div>
+    </section>
+  </div>
+
+  <div class=" container" style="padding-top: 50px">
+      <h2 class="Order_h2" id="food_Menu">FOOD MENU</h2>
+      <div class="menu" style="padding-top: 50px">
+      <div >
+        <h3 class="order_h3">Starters</h3>
+          <div class="starters" >
+            <div class="cart-items">
+                  <div class="shop-item">     
+                  <span class="shop-item-name" style="font-size: 25px;">Baked spring rolls</span>
+                  <p><span class="order_span">Ingredients: </span>spring roll papers, bean sprouts, coriander, chinese cabbage</p>
+                  <img class="shop-item-image" src=" ">
+                  <div class="shop-item-details">Price: <span class="shop-item-price">250 kr</span>
+                  <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                  </div>
+                  </div> 
+                  <br>
+                <div class="shop-item">
+                    <span class="shop-item-name" style="font-size: 25px;">Roasted stuffed Mushroom</span>
+                    <p><span class="order_span">Ingredients: </span>  Mushrooms, garlic, oliveoil, lemon</p>
+                    <img class="shop-item-image" src=" ">
+                    <div class="shop-item-details">Price: <span class="shop-item-price">200 kr</span>
+                    <button class="btn btn-primary shop-item-button pull-right" type="button" style="margin-bottom: 20px;">ADD TO CART</button>
+                    </div>
+                </div>
+                <br>
+                <div class="shop-item">
+                    <span class="shop-item-name" style="font-size: 25px;">Bacon Rings</span>
+                    <p><span class="order_span">Ingredients:</span>string cheese,pine apple rings,bacon rashers</p>
+                    <img class="shop-item-image" src=" ">
+                    <div class="shop-item-details">Price: <span class="shop-item-price">200 kr</span>
+                    <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <br>
+                <div class="shop-item">
+                    <span class="shop-item-name" style="font-size: 25px;">Lobster Roll</span>
+                    <p><span class="order_span">Ingredients:</span> Plump lobster meat, mayo and crisp lettuce on a toasted bulky</p>
+                    <img class="shop-item-image" src=" ">
+                    <div class="shop-item-details">Price: <span class="shop-item-price">200 kr</span>
+                    <button class="btn btn-primary shop-item-button pull-right" type="button" style="margin-bottom: 20px;">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div>
+        <h3 class="order_h3">Main course</h3>
+          <div class="maincourse" >
+            <div class="cart-items">
+              <div class="shop-item">
+                  <span class="shop-item-name" style="font-size: 25px;">palak paneer</span>
+                  <p><span class="order_span">Ingredients: </span>spinach, paneer and tomatoes</p>
+                  <img class="shop-item-image" src=" " >
+                  <div class="shop-item-details">Price: <span class="shop-item-price">600 kr</span>
+                  <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+              <br>
+              <div class="shop-item">
+                  <span class="shop-item-name" style="font-size: 25px;">butter chicken</span>
+                  <p><span class="order_span">Ingredients: </span> Fresh chicken, butter, fresh cream and tomatoes</p>
+                  <img class="shop-item-image" src=" ">
+                  <div class="shop-item-details">Price: <span class="shop-item-price">400 kr</span>
+                  <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+              <br>
+              <div class="shop-item" >
+                  <span class="shop-item-name" style="font-size: 25px;">Classic Lasagne</span>
+                  <p><span class="order_span">Ingredients: </span>lasagne sheets, hot beef, tomato sauce, mozzarella</p>
+                  <img class="shop-item-image" src=" ">
+                  <div class="shop-item-details">Price: <span class="shop-item-price">400 kr</span>
+                  <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+              <br>
+              <div class="shop-item">
+                  <span class="shop-item-name" style="font-size: 25px;">Lamb paya</span>
+                  <p><span class="order_span">Ingredients: </span>fresh mutton, butter, tomato</p>
+                  <img class="shop-item-image" src=" ">
+                  <div class="shop-item-details">Price: <span class="shop-item-price">400 kr</span>
+                  <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div><h3 class="order_h3">Beverages</h3>
+        <div  class="beverages" >
+          <div class="cart-items">
+            <div class="shop-item">
+                <span class="shop-item-name" style="font-size: 25px;">Orange Juice</span>
+                <p><span class="order_span">Ingredients: </span> fresh oranges and sugar</p>
+                <img class="shop-item-image" src=" ">
+                <div class="shop-item-details">Price: <span class="shop-item-price">100 kr</span>
+                <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <br>
+            <div class="shop-item">            
+                <span class="shop-item-name" style="font-size: 25px;">Strawberry Thandai</span>
+                <p><span class="order_span">Ingredients: </span>Starwberries, cashew nuts, Almonds, pistachois</p>
+                <img class="shop-item-image" src=" ">
+                <div class="shop-item-details">Price: <span class="shop-item-price">150 kr</span>
+                <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <br>
+            <div class="shop-item">
+                <span class="shop-item-name" style="font-size: 25px;">Kesar Badam</span>
+                <p><span class="order_span">Ingredients: </span>Kesarbadam, Thandai, Milk</p>
+                <img class="shop-item-image" src=" ">
+                <div class="shop-item-details">Price: <span class="shop-item-price">100 kr</span>
+                <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <br>
+            <div class="shop-item">
+                <span class="shop-item-name" style="font-size: 25px;">Watremelon & dry fruit Punch</span>
+                <p><span class="order_span" >Ingredients: </span>  watermelon, almonds, cashew nuts, lemon juice, sugar</p>
+                <img class="shop-item-image" src=" ">
+                <div class="shop-item-details">Price: <span class="shop-item-price">100 kr</span>
+                <button class="btn btn-primary shop-item-button pull-right" type="button">ADD TO CART</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+<!-- </div> -->
+<!-- ============= Footer COMPONENT ============== -->
+   
+    <!--    Yuran code -->
+    <footer class="footer fixed-bottom">
+      <p class="pull-left ">©- 2022 : Circus Restaurant</p>
+      <div class="pull-right">
+          <div class="d-flex justify-content-end">
+              <a class="nav-link " href="https://www.facebook.com/login.php"><i class="fa fa-facebook "></i></a>
+              <a class="nav-link " href="https://twitter.com/i/flow/login"><i class="fa fa-twitter "></i></a>
+              <a class="nav-link " href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram "></i></a>
+              <a class="nav-link " href="https://www.youtube.com/"><i class="fa fa-youtube "></i></a>
+          </div>
+      </div>
+
+  </footer>
+
+</body>
+
+
+<style>
+  /* body{
+background-color: rgb(203, 124, 124);
+} */
+.menu{
+display: flex;
+margin-left: 30px;
+
+}
+
+.shop-item-price{
+  /* border: solid; */
+  font-size: 22px;
+  font-weight: 500;
+}
+.shop-item-details{
+  /* border: solid; */
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
+
+.order_h3{
+font-size: 39px;
+text-transform: capitalize;
+text-align: center;
+color: white;
+font-family: "Poppins", sans-serif;
+font-style: underline;
+
+}
+.container .order_h2{
+text-align: center;
+color: white;
+    font-size: 60px;
+    
+    
+}
+.beverages {
+display: grid;
+gap:20px;
+padding: 20px;
+}
+.starters {
+display: grid;
+gap:20px;
+padding: 20px;
+}
+.maincourse{
+display: grid;
+gap:20px;
+padding: 20px;
+}
+.shop-item-name{
+font-size: 25px;
+text-transform: uppercase;
+font-style: italic;
+text-decoration: underline;
+color: white;
+font-weight:500;
+}
+button{
+margin-bottom: 20px;
+margin-left: 20px;
+}
+section{
+justify-content: center;
+}
+.btn-danger:hover{
+color: rgb(100, 4, 4);
+}
+.btn-primary:hover{
+color: rgb(6, 6, 95);
+}
+p{
+text-transform: capitalize;
+font-size: 20px;
+color: black;
+}
+
+p .order_span{
+  font-weight: 700;
+}
+
+.cart-items{
+  font-size: 20px;
+  text-transform: capitalize;
+  
+  color: white;
+  text-align: left;
+}
+
+.cart-items> .shop-item-price{
+  font-size: 20px;
+  text-align: right;
+}
+
+
+html > .food_Menu{
+  scroll-behavior: smooth;
+}
+
+</style>
+
+
+<script>
+if (document.readyState == 'loading') {
+document.addEventListener('DOMContentLoaded', ready)
+} else {
+ready()
+}
+function ready() {
+var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+for (var i = 0; i < removeCartItemButtons.length; i++) {
+ var button = removeCartItemButtons[i]
+ button.addEventListener('click', removeCartItem)
+}
+var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+for (var i = 0; i < quantityInputs.length; i++) {
+ var input = quantityInputs[i]
+ input.addEventListener('change', quantityChanged)
+}
+var addToCartButtons = document.getElementsByClassName('shop-item-button')
+for (var i = 0; i < addToCartButtons.length; i++) {
+ var button = addToCartButtons[i]
+ button.addEventListener('click', addToCartClicked)
+}
+document.getElementsByClassName('btn-order')[0].addEventListener('click', orderClicked)
+}
+function orderClicked() {
+alert('Thank you for your order')
+var cartItems = document.getElementsByClassName('cart-items')[0]
+while (cartItems.hasChildNodes()) {
+ cartItems.removeChild(cartItems.firstChild)
+}
+updateCartTotal()
+}
+function removeCartItem(event) {
+var buttonClicked = event.target
+buttonClicked.parentElement.parentElement.remove()
+updateCartTotal()
+}
+function quantityChanged(event) {
+var input = event.target
+if (isNaN(input.value) || input.value <= 0) {
+ input.value = 1
+}
+updateCartTotal()
+}
+function addToCartClicked(event) {
+var button = event.target
+var shopItem = button.parentElement.parentElement
+var title = shopItem.getElementsByClassName('shop-item-name')[0].innerText
+var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+addItemToCart(title, price, imageSrc)
+updateCartTotal()
+}
+function addItemToCart(title, price, imageSrc) {
+var cartRow = document.createElement('div')
+cartRow.classList.add('cart-row')
+var cartItems = document.getElementsByClassName('cart-items')[0]
+var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+for (var i = 0; i < cartItemNames.length; i++) {
+ if (cartItemNames[i].innerText == title) {
+     alert('This item is already added to the cart')
+     return
+ }
+}
+var cartRowContents = `
+ <div class="cart-item cart-column">
+     <img class="cart-item-image" src="${imageSrc}" width="10" height="10">
+     <span class="cart-item-title">${title}</span>
+ </div>
+ <span class="cart-price cart-column">${price}</span>
+ <div class="cart-quantity cart-column">
+     <input class="cart-quantity-input" type="number" value="1">
+     <button class="btn btn-danger" type="button">REMOVE</button>
+ </div>`
+cartRow.innerHTML = cartRowContents
+cartItems.append(cartRow)
+cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+function updateCartTotal() {
+var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+var total = 0
+for (var i = 0; i < cartRows.length; i++) {
+ var cartRow = cartRows[i]
+ var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+ var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+ var price = parseFloat(priceElement.innerText.replace('$', ''))
+ var quantity = quantityElement.value
+ total = total + (price * quantity)
+}
+total = Math.round(total * 100) / 100
+document.getElementsByClassName('cart-total-price')[0].innerText = total +  ' kr' 
+}
+</script>
+
+
+</html>

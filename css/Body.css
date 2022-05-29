@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f97777;
+    /* font-family: 'Calibri'; */
+    margin-bottom: 80px;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 2000px;
+    max-height: 700px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Satisfy", sans-serif !important;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    width: 1300px;
+}
+
+
+/* Caption text */
+
+.text {
+    max-width: 50%;
+    color: #f2f2f2;
+    top: 46%;
+    font-size: 10px;
+    padding: 4px 6px;
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    height: 75%;
+    text-align: center;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .85);
+}
+
+.text h5 {
+    font-size: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3px;
+    margin-top: 50px;
+}
+
+.text p {
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* Number text  
+.numtext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}*/
+
+
+/* The bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 40s;
+}
+
+
+/*cris part*/
+
+@keyframes fade {
+    0% {
+        opacity: .79
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0.79
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 900px) and (max-width: 600px) and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+    .footer {
+        font-size: 11px;
+    }
+    .i_wrap {
+        font-size: 11px;
+    }
+    /* .container1{ 
+    font-size: 11px;
+    width: 100%;
+    height: 50%;
+  } */
+    .container2 {
+        font-size: 11px;
+        width: 100%;
+        height: 50%;
+    }
+    .col3 {
+        width: 50%;
+        height: 50%;
+        font-size: 11px;
+    }
+    .col1 {
+        width: 50%;
+        height: 30%;
+        font-size: 11px;
+    }
+    .container1 .col {
+        width: 10%;
+        height: 10%;
+        font-size: 11px;
+    }
+}
+
+
+/*-----------------------------------------------*/
+
+
+/**** CSS Starts here / Imran part in home page****/
+
+
+/* .i_wrap {
+  display: flex;
+  padding: 50px;
+  margin: auto;
+  position: relative;
+  /* display: center; ----------------------
+  justify-content: center;
+  
+}
+.col1,
+.col3 {
+  text-align: center;
+  
+}
+
+.box {
+  margin: 5px;
+  /* border: solid 2px rgba(151, 32, 52, 0.981); ----------------
+  border: solid 2px rgb(145, 67, 67); 
+  margin-top: 0;
+  height: 150px;
+  background-color: rgb(145, 67, 67); 
+  overflow: auto;
+  color: white;
+}
+.col1 {
+  width: 70%;
+  /* margin-left: 10px; -----------------
+  margin-right: 20px;
+  max-width: 1000px;
+  max-height: 400px;
+}
+.col3 {
+  width: 30%;
+  margin-right: 10px;
+  padding-top: 0;
+  max-width: 500px;
+  max-height: 400px;
+}
+
+
+.imran {
+  width: 100%;
+  height: 100%;
+  display: center;
+}
+
+.I_h2
+{
+  padding-top: 30px;
+} */
+
+.i_wrap {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.i_wrap>.col1 {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.i_wrap>.col1 .imran_img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.i_wrap .col3 {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.i_wrap .col3>.box_i {
+    border: 2px solid #914343;
+    margin: 3px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    overflow: auto;
+}
+
+.i_h4 {
+    padding-top: 30px;
+    color: white;
+}
+
+.imran_p {
+    font-size: 20px;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/**** CSS Ends above/ Imran part in home page****/
+
+.container1 {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+
+/* .container1 .row{
+  
+  width: 100%;
+  text-align: center;
+} */
+
+.col_k {
+    float: left;
+    width: 33.33%;
+}
+
+.cls1>.K_h3 {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.cls1 {
+    margin: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cls1 .K_img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 470px;
+    width: 770px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1300px) {
+    .col-md-4 iframe {
+        height: 230px;
+        width: 100%;
+    }
+}
+
+
+/*-----------------------------------------*/
+
+
+/******* Gallery CSS Stats here ---- Imran worked on it ---- *****/
+
+.container_g {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "poppins", sans-serif; */
+    /* border: solid 2px; */
+}
+
+.container_g {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 20px 0px 20px;
+}
+
+.container_g .heading_g {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container_g>.heading_g>h1 {
+    /* font-size: 2em; */
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: solid black 2px;
+    color: white;
+}
+
+.container_g .heading_g>h1>span {
+    font-weight: lighter;
+}
+
+.container_g>.box_g {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_g>.box_g>.imageClass_g {
+    display: flex;
+    flex-direction: column;
+    max-width: 32.5%;
+}
+
+.container_g>.box_g>.imageClass_g>img {
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+/*-- ============= Gallery CSS Ends here ============== -->*/
+
+
+/*-----------------------------------------*/
+
+
+/*-- =========== About Us CSS starts here ============ -->*/
+
+.container_a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "poppins", sans-serif; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px 0px 20px;
+    /* border: solid 2px; */
+}
+
+
+/* .container_a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 20px 0px 20px;
+  } */
+
+.container_a .heading_a {
+    width: 30%;
+    padding-bottom: 50px;
+}
+
+.container_a>.heading_a>h1 {
+    /* font-size: 3em; */
+    color: white;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: solid black 2px;
+    text-align: center;
+}
+
+.container_a .heading_a h1 span {
+    font-weight: lighter;
+}
+
+.container_a>.box_a {
+    margin-bottom: 30px;
+}
+
+.container_a>.team_photos {
+    display: flex;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.container_a>.team_photos .aboutus_img {
+    border-radius: 100px;
+    max-width: 70%;
+    width: 500px;
+}
+
+
+/*-- ============= About Us CSS Ends here ============== -->*/
+
+
+/*----------------------------------------------------------*/
+
+
+/*-- ============= Table Booking CSS Starts here ============== -->*/
+
+#padding_div {
+    padding-top: 30px;
+}
+
+
+/* Media Queries: Tablet Landscape */
+
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+}

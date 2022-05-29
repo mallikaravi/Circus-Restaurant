@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>Registration</title>
+    <html lang="en">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Body.css">
+    <link rel="stylesheet" href="css/Forms.css">
+    <link href="css/Header_Footer.css" rel="stylesheet">
+
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- ============= Header COMPONENT ============== -->
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-dark  justify-content-center topnav">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-x" href=" Home_Page.html "><img class="rounded-circle " src="Images/logo.jpg " width="60 " height="60 " alt=" " /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav  w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home_Page.html"><i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Food_Menu.html"><i class="fa fa-fw fa-cutlery"></i>Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html"><i class="fa fa-fw fa-photo"></i>Gallery</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_Us.html"><i class="fa fa-fw fa-phone-square"></i>Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Us.html"><i class="fa fa-fw fa-info-circle"></i>About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Table_Booking.html"><i class="fa fa-fw fa-calendar"></i>Book a Table</a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link" href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Registration.html"><i class="fa fa-fw fa-address-book"></i>Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ============= End Header COMPONENT ============== -->
+
+    <!-- ============= Container COMPONENT ============== -->
+    <!-- Begin page content -->
+    <div class="container" style="max-width: 90%">
+        <div class="row justify-content-center" id="padding_div">
+            <form style="width: 70%;">
+                <div class="form-check d-flex justify-content-center">
+                    <h1> Register </h1>
+                </div>
+
+                <hr style="border: 1px solid white;">
+
+                <div class="form-group row mb-4">
+                    <label for="name" class="col-sm-2 col-form-label">Your Name</label>
+                    <div class="col-sm-10 ">
+                        <input type="text" class="form-control" name="name" placeholder="Enter Name" required />
+                    </div>
+                </div>
+
+                <div class="form-group row mb-4">
+                    <label for="usrName" class="col-sm-2 col-form-label">User Name</label>
+                    <div class="col-sm-10 ">
+                        <input type="text" class="form-control" name="userName" placeholder="User Name" required />
+                    </div>
+                </div>
+
+                <div class="form-group row mb-4">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="confirmPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="cancel" class="btn btn-danger btn-block mb-2 ">Cancel</button>
+                    <button type="submit" class="btn btn-primary btn-block mb-2 ">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- ============= End Container COMPONENT ============== -->
+
+    <!-- ============= Footer COMPONENT ============== -->
+
+    <!-- ========= START FOOTER ========== -->
+    <footer class="footer fixed-bottom">
+        <p class="pull-left">©- 2022 : Circus Restaurant</p>
+        <div class="pull-right">
+            <div class="d-flex justify-content-end">
+                <a class="nav-link " href="https://www.facebook.com/login.php"><i class="fa fa-facebook "></i></a>
+                <a class="nav-link " href="https://twitter.com/i/flow/login"><i class="fa fa-twitter "></i></a>
+                <a class="nav-link " href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram "></i></a>
+                <a class="nav-link " href="https://www.youtube.com/"><i class="fa fa-youtube "></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ============= End Footer COMPONENT ============== -->
+
+</body>
+
+</html>

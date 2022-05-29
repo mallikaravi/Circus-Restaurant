@@ -1,0 +1,265 @@
+<html lang="en">
+
+<head>
+
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <link rel="stylesheet" href="css/Body.css">
+    <link rel="stylesheet" href="css/Forms.css">
+    <link href="css/Header_Footer.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        });
+    </script>
+</head>
+
+<body>
+    <!-- ============= Header COMPONENT ============== -->
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-dark  justify-content-center topnav">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-x" href=" Home_Page.html "><img class="rounded-circle " src="Images/logo.jpg " width="60 " height="60 " alt=" " /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav  w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home_Page.html"><i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Food_Menu.html"><i class="fa fa-fw fa-cutlery"></i>Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html"><i class="fa fa-fw fa-photo"></i>Gallery</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_Us.html"><i class="fa fa-fw fa-phone-square"></i>Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Us.html"><i class="fa fa-fw fa-info-circle"></i>About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Table_Booking.html"><i class="fa fa-fw fa-calendar"></i>Book a Table</a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link" href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registration.html"><i class="fa fa-fw fa-address-book"></i>Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ============= End Header COMPONENT ============== -->
+    <!-- ============= Container COMPONENT ============== -->
+    <!-- Begin page content -->
+    <div class="container" style="padding-top: 50px">
+        <div id="eventCarouselIndicators" class="row justify-content-center">
+            <div class="col-10 d-flex justify-content-center">
+
+                <h1 style="color: white;"> Events </h1>
+            </div>
+
+            <div class="col-2  d-flex justify-content-end" style="margin-top: 1%;">
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselIndicators" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3" href="#carouselIndicators" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <hr style="border: 1px solid white;">
+
+            <div class="col-12">
+                <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event1.jpg">
+                                        <label class="image_label">
+                                                <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                                <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                                <i class="fa fa-fw fa-money"></i> 180 Kr
+                                        </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Acrobatics
+                                                <a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">Acrobatics is the performance of human feats of balance, agility, and motor coordination. Acrobatic skills are used in performing arts, sporting events, and martial arts.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event2.jpg">
+                                        <label class="image_label">
+                                            <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                            <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                            <i class="fa fa-fw fa-money"></i> 180 Kr
+                                        </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Ring Curbs<a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">The massive wooden rings now used by circuses. When the making of ring banks was discontinued by most shows, rings were made of rope, or canvas sections.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event3.jpg">
+                                        <label class="image_label">
+                                            <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                            <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                            <i class="fa fa-fw fa-money"></i> 180 Kr
+                                    </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Aerial hoop<a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">The aerial hoop is a circular steel apparatus suspended from the ceiling, on which circus artists may perform aerial acrobatics. It can be used static, spinning, or swinging. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event4.jpg">
+                                        <label class="image_label">
+                                            <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                            <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                            <i class="fa fa-fw fa-money"></i> 180 Kr
+                                    </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Human pyramid<a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">A human pyramid is an acrobatic formation of three or more people in which two or more people support a tier of higher people, who in turn may support other, higher tiers of people.</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event5.jpg">
+                                        <label class="image_label">
+                                            <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                            <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                            <i class="fa fa-fw fa-money"></i> 180 Kr
+                                    </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Trapeze<a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">A trapeze is a short horizontal bar hung by ropes or metal straps from a ceiling support.Trapeze acts may be static, spinning, swinging or flying, and may be performed solo, double, triple or as a group act</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event6.jpg">
+                                        <label class="image_label">
+                                            <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                            <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                            <i class="fa fa-fw fa-money"></i> 180 Kr
+                                    </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Aerial Hoop Displays<a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">Enjoy the thrill & spectacle of Aerial Hoop Displays as they perform amazing gymnastic tricks & demonstrate incredible flexibility & strength. Elegant, impressive & inspiring, Aerial Hoop Displays are suitable
+                                                for all event types, come with a choice of costumes & will be the highlight of your night!</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event7.jpg">
+                                        <label class="image_label">
+                                            <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                            <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                            <i class="fa fa-fw fa-money"></i> 180 Kr
+                                    </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Fire – Light Performers<a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">When you book our fire performers and fire shows you can be sure of an amazing, visual and fire spectacular! We have the highest standard fire performers available. They will create and choreograph unique fire
+                                                shows, tailored to your theme and event entertainment.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event8.jpg">
+                                        <label class="image_label">
+                                            <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                            <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                            <i class="fa fa-fw fa-money"></i> 180 Kr
+                                    </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Artistic cycling<a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">Artistic cycling is a form of competitive indoor cycling in which athletes perform tricks (called exercises) for points on specialized, fixed-gear bikes in a format similar to ballet or gymnastics. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280" src="Images/circus-event9.jpg">
+                                        <label class="image_label">
+                                            <i class="fa fa-fw fa-calendar"></i>03.07.22
+                                            <i class="fa fa-fw fa-clock-o"></i>17:00-21:00
+                                            <i class="fa fa-fw fa-money"></i> 180 Kr
+                                    </label>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Lisa Looping<a href="Circus_Booking.html" class="btn btn-sm btn-primary pull-right">Book Now</a></h4>
+                                            <p class="card-text">Lisa loves to travel across the globe to do what she loves most: Performing with her hula hoops. 10 years of stage experience make her show acts a real highlight for any kind of event.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ============= End Container COMPONENT ============== -->
+
+    <!-- ============= Footer COMPONENT ============== -->
+
+    <!--    Yuran code -->
+    <footer class="footer fixed-bottom">
+        <p class="pull-left">©- 2022 : Circus Restaurant</p>
+        <div class="pull-right">
+            <div class="d-flex justify-content-end">
+                <a class="nav-link" href="https://www.facebook.com/login.php"><i class="fa fa-facebook"></i></a>
+                <a class="nav-link" href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+                <a class="nav-link" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram"></i></a>
+                <a class="nav-link" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- ============= End Footer COMPONENT ============== -->
+
+</body>
+
+</html>

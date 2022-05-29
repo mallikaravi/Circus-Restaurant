@@ -1,0 +1,476 @@
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/Body.css">
+    <link rel="stylesheet" href="css/Forms.css">
+    <link href="css/Header_Footer.css" rel="stylesheet">
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <!-- ============= Header COMPONENT ============== -->
+    <nav id="navbar" class="navbar  fixed-top navbar-expand-lg navbar-dark  justify-content-center topnav">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-x" href=" Home_Page.html"><img class="rounded-circle" src="Images/logo.jpg" width="60" height="60" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav  w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home_Page.html"><i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item scrollto">
+                        <a class="nav-link active" href="Food_Menu.html"><i class="fa fa-fw fa-cutlery"></i>Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html"><i class="fa fa-fw fa-photo"></i>Gallery</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_Us.html"><i class="fa fa-fw fa-phone-square"></i>Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Us.html"><i class="fa fa-fw fa-info-circle"></i>About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Table_Booking.html"><i class="fa fa-fw fa-calendar"></i>Book a Table</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registration.html"><i class="fa fa-fw fa-address-book"></i>Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ============= End Header COMPONENT ============== -->
+    <div class="container" style="max-width: 90%">
+        <div id="foodMenuSlide" class="row justify-content-center">
+
+            <!-- ======= Hero Section ======= -->
+            <section id="hero" style="padding: 0px;">
+                <div class="hero-container">
+                    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                        <div class="carousel-inner" role="listbox">
+
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active" style="background-image:url('Images/restaurant-bg-image1.jpg')">
+                                <div class="carousel-container">
+                                    <div class="carousel-content">
+                                        <h2 class="animate__animated animate__fadeInDown"><span>A Circus Eats Restaurant</span></h2>
+                                        <p class="animate__animated animate__fadeInUp">To provide a professional, yet homely, style of hospitality that makes all guests, welcome and happy to be here. A warm meal, a comfortable place, a smile and pleasant attitude that can turn strangers into friends.</p>
+                                        <div>
+                                            <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                                            <a href="Table_Booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                                            <a href="Order_Menu.html" class="btn-book animate__animated animate__fadeInUp scrollto">Order Food</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item" style="background-image: url('Images/restaurant-bg-image2.jpg');">
+                                <div class="carousel-container">
+                                    <div class="carousel-content">
+                                        <h2 class="animate__animated animate__fadeInDown">Delicious Restaurant</h2>
+                                        <p class="animate__animated animate__fadeInUp"> Our restaurant was born out of love and respect for these humble deli creations, met with a desire to bring quality ingredients to the table. Simply put, we’re here to bring you a sandwich experience you can feel
+                                            good about..
+                                        </p>
+                                        <div>
+                                            <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                                            <a href="Table_Booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                                            <a href="Order_Menu.html" class="btn-book animate__animated animate__fadeInUp scrollto">Order Food</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-item" style="background-image: url('Images/retaurant-bg-image3.jpg');">
+                                <div class="carousel-container">
+                                    <div class="carousel-content">
+                                        <h2 class="animate__animated animate__fadeInDown">Delicious Restaurant</h2>
+                                        <p class="animate__animated animate__fadeInUp">The authentic taste comes from family recipes and from fresh, simple and tasteful ingredients straight from home. In every recipe there is a bit of true culture and flavor</p>
+                                        <div>
+                                            <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                                            <a href="Table_Booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                                            <a href="Order_Menu.html" class="btn-book animate__animated animate__fadeInUp scrollto">Order Food</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                            <span class="fa fa-arrow-left fa-stack-2x" aria-hidden="true"></span>
+                        </a>
+
+                        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                            <span class="fa fa-arrow-right fa-stack-2x" aria-hidden="true"></span>
+                        </a>
+
+                    </div>
+                    
+                </div>
+            </section>
+            
+            
+            <!-- End Hero -->
+
+
+
+            <!-- ======= Menu Section ======= -->
+            <section id="menu" name="menu" class="menu">
+                <div class="container">
+
+                    <div class="section-title">
+                        <h2>Check our tasty <span>Menu</span></h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <ul id="menu-flters">
+                                <li data-filter="*" class="filter-active">Show All</li>
+                                <li data-filter=".filter-starters">Starters</li>
+                                <li data-filter=".filter-maincourse">Main course</li>
+                                <li data-filter=".filter-Beverages">Beverages</li>
+                                <li>
+                                    <a class="scrollto" style="color:black" href=" #specials">Specialty</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row menu-container">
+
+                        <div class="col-lg-6 menu-item filter-starters">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Roasted stuffed mushrooms
+                                </a><span>200 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                Mushrooms,garlic,oliveoil,lemon
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6 menu-item filter-maincourse">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Palak paneer</a><span>600 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                spinach,paneer and tomatoes
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 menu-item filter-starters">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Baked spring rolls</a><span>250 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                spring roll papers,bean sprouts,coriander,chinese cabbage
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 menu-item filter-maincourse">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Classic lasagne</a><span>400 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                lasagne sheets,hot beef,tomato sauce,mozzarella
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 menu-item filter-Beverages">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Orange juice</a><span>100 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                fresh oranges and sugar
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 menu-item filter-starters">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Bacon rings</a><span>200 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                string cheese,pine apple rings,bacon rashers
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 menu-item filter-maincourse">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Butter Chicken</a><span>400 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                Fresh chicken,butter,fresh cream and tomatoes
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 menu-item filter-Beverages">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Strawberry Thandai</a><span>100 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                Starwberries,cashew nuts,Almonds,pistachois
+                            </div>
+                        </div>
+                        <div class="col-lg-6 menu-item filter-maincourse">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Lamb Paya</a><span>400 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                fresh mutton,butter,tomato
+                            </div>
+                        </div>
+                        <div class="col-lg-6 menu-item filter-Beverages">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Watermelon & Dry Fruit Punch Recipe</a><span>100 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                watermelon,almonds,cashew nuts,lemon juice,sugar
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 menu-item filter-starters">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Lobster Roll</a><span>200 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+                            </div>
+                        </div>
+                        <div class="col-lg-6 menu-item filter-Beverages">
+                            <div class="menu-content">
+                                <a class="menu_food_a" href="#">Kesar Thandai</a><span>100 kr</span>
+                            </div>
+                            <div class="menu-ingredients">
+                                Kesarbadam,Thandai,Milk
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Menu Section -->
+
+            <!-- ======= Specials Section ======= -->
+            <section id="specials" class="specials">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Check our <span>Specials</span></h2>
+                        <p>These are the special foods of our restaurant</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Chicken pizza</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Fried Rice</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Calzone</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Neapolitan Pizza</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Pizzette</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-9 mt-4 mt-lg-0">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab-1">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3 class="menu_h3">Enjoy delicious pizza</h3>
+                                            <p class="fst-italic">Fantastic recipe with chicken,tomatoes,cheese</p>
+                                            <p> An Italian favorite, this chicken pizza recipe is a delicious mix of flat bread or base topped with cheese, chillies, onion, garlic sauce and chunks of chicken.Tossed to perfection, this quick and easy pizza
+                                                recipe is the solution to all those chicken and cheese cravings</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="Images/chickenpizza.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-2">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3 class="menu_h3">Enjoy delicious fried rice</h3>
+                                            <p class="fst-italic">fantastic recipe with all vegetables mixed in rice</p>
+                                            <p>Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat.</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="Images/friedrice.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-3">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3 class="menu_h3">Enjoy delicious calzone</h3>
+                                            <p class="fst-italic">Stuff with your favorite pizza toppings like sauce, pepperoni, mozzarella, and veggies.</p>
+                                            <p>Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat.</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="Images/calzone.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-4">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3 class="menu_h3">Enjoy delicious Neapolitan Pizza</h3>
+                                            <p class="fst-italic">It is a delicious pizza with more tomatoes</p>
+                                            <p>Neapolitan pizza is all about simplicity. The sauce is just canned tomatoes, and you’ll top it with fresh mozzarella and basil. Pizza night just got an upgrade!</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="Images/Neopolitanpizza.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-5">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3 class="menu_h3">Enjoy delicious Pizzette</h3>
+                                            <p class="fst-italic">Delicious pizza with cheese and tomatoes.</p>
+                                            <p>Top your mini-dough circles with fontina cheese, tomatoes, and parmesan cheese. After baking, finish them off with basil and a drizzle of olive oil.
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="Images/deliciouspizette.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- End Specials Section -->
+
+
+            <!-- ======= Chefs Section ======= -->
+            <section id="chefs" class="chefs">
+                <div class="container container_chef">
+
+                    <div class="section-title">
+                        <h2>Our Proffesional <span>Chefs</span></h2>
+                        <p>Here are our trained professional cooks and tradesman who is proficient in all aspects of food preparation</p>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="member">
+                                <div class="pic"><img src="Images/chef-1.jpg" class="rounded-circle" alt=""></div>
+                                <div class="member-info">
+                                    <h4 class="menu_h4">Walter White</h4>
+                                    <span>Master Chef</span>
+                                    <div class="social">
+                                        <a href=""><i class="fa fa-twitter" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-facebook" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-instagram" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-linkedin" class="chef_i"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="member">
+                                <div class="pic"><img src="Images/chef-2.jpg" class="rounded-circle" alt=""></div>
+                                <div class="member-info">
+                                    <h4 class="menu_h4">Sarah Jhonson</h4>
+                                    <span>Patissier</span>
+                                    <div class="social">
+                                        <a href=""><i class="fa fa-twitter" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-facebook" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-instagram" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-linkedin" class="chef_i"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="member">
+                                <div class="pic"><img src="Images/chef-3.jpg" class="rounded-circle" alt=""></div>
+                                <div class="member-info">
+                                    <h4 class="menu_h4">William Anderson</h4>
+                                    <span>Cook</span>
+                                    <div class="social">
+                                        <a href=""><i class="fa fa-twitter" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-facebook" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-instagram" class="chef_i"></i></a>
+                                        <a href=""><i class="fa fa-linkedin" class="chef_i"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- End #main -->
+        </div>
+    </div>
+
+
+    <script src="js/isotope.pkgd.min.js">
+    </script>
+    <script src="js/main.js"></script>
+
+    <!-- ============= End Container COMPONENT ============== -->
+
+    <!-- ============= Footer COMPONENT ============== -->
+
+    <!--    Yuran code -->
+    <footer class="footer fixed-bottom">
+        <p class="pull-left">©- 2022 : Circus Restaurant</p>
+        <div class="pull-right">
+            <div class="d-flex justify-content-end">
+                <a class="nav-link" href="https://www.facebook.com/login.php"><i class="fa fa-facebook"></i></a>
+                <a class="nav-link" href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+                <a class="nav-link" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram"></i></a>
+                <a class="nav-link" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- ============= End Footer COMPONENT ============== -->
+
+</body>
+
+</html>

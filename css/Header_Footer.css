@@ -1,0 +1,108 @@
+/*Navbar css*/
+
+.topnav {
+    background-color: rgb(145, 67, 67);
+}
+
+.navbar-brand-x {
+    margin: -10px 0px -10px 0px;
+}
+
+.navbar-nav>li>a {
+    color: #434040;
+}
+
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
+    color: #8a0e0b;
+    background-color: #7c7774;
+}
+
+.navbar-nav>.active>a,
+.navbar-nav>.active>a:hover,
+.navbar-nav>.active>a:focus {
+    color: #8a0e0b;
+    background-color: #4a4746;
+}
+
+.nav-link {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 30px;
+}
+
+.blink-me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    60% {
+        opacity: 0;
+    }
+}
+
+
+/*Footer css*/
+
+
+/* p {
+    text-align: left;
+    font-size: xlarge;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+ul {
+    
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    margin-top: 0%;
+    margin-bottom: 20px;
+    display: flex;
+}
+li {
+    float: right;
+    margin: 15px;
+    text-align: center; 
+    position: relative;
+   
+}
+
+#footer a:hover {
+    display: inline-block;
+    width: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#footer {  
+    position: fixed;  
+    left: 0px;  
+    bottom: 0px;  
+    right: 10px;   
+    width: 100%;  
+     text-align: left;  
+     font-style: italic;
+     background-color: rgb(145, 67, 67);
+        color: white;
+        height: 50px;
+        
+    } 
+
+.yuran{
+    
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    display: inline;
+    text-align: right;
+    
+    
+} */
+
+.footer {
+    font-style: italic;
+    background-color: rgb(145, 67, 67);
+    color: white;
+}

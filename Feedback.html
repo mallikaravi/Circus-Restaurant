@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/Body.css">
+    <link rel="stylesheet" href="CSS/Forms.css">
+    <link href="CSS/Header_Footer.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        });
+    </script>
+</head>
+
+<body id="feedbackBody">
+    <!-- ============= Header COMPONENT ============== -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-center topnav">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-x" href=" Home_Page.html "><img class="rounded-circle " src="Images/logo.jpg " width="60 " height="60 " alt=" " /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav  w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home_Page.html"><i class="fa fa-home"></i>Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Food_Menu.html"><i class="fa fa-fw fa-cutlery"></i>Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html"><i class="fa fa-fw fa-photo"></i>Gallery </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_Us.html"><i class="fa fa-fw fa-phone-square"></i> Contact </a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="About_Us.html"><i class="fa fa-fw fa-info-circle"></i>About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Table_Booking.html"><i class="fa fa-fw fa-calendar"></i>Book a Table </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Login.html"><i class="fa fa-fw fa-user"></i>Login</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registration.html"><i class="fa fa-fw fa-address-book"></i>Registration </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ============= End Header COMPONENT ============== -->
+
+    <!-- ============= Container COMPONENT ============== -->
+    <!-- Begin page content -->
+    <div class="container d-flex justify-content-center pt-3 " style="max-width: 90%" >
+        <div class="d-flex justify-content-center">
+        <div class="container-k">
+            <form id="feedbackForm">
+            <h2 class="feedback_h2">Your Feedback matters a lot!!</h2>
+            <br>
+            <div class="form-k" >
+                <input type="text" class="fb_texbox form-in"  placeholder="Your Name" ><br>
+                <i class="feedback_i fa fa-user"  ></i><br>
+            </div>
+            <div class="form-k" >
+                <input type="text" class=" fb_texbox form-in"  placeholder="Your Email" ><br>
+                <i class="feedback_i fa fa-envelope" ></i><br>
+            </div>
+            <br>
+                <div class="form-k" style="color:white">
+                    <p class="feedback_p">Did you satisfied with our services</p>
+                    
+                    <div class="fb_radiobtn">
+                    
+                    Yes &nbsp;<input class="d-inline-flex flex-row" type="radio" name="1" style="height: 20px; width: 20px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp; &nbsp; No &nbsp;<input class="d-inline-flex flex-row" type="radio" name="1" style="height: 20px; width: 20px; ">                   
+                    </div>
+                    <br><br>
+                </div>
+                <div class="rating-k" style="color:white">
+                    <p class="feedback_p">How many Stars will you prefer to give?</p>
+                    <span class="fa fa-star" aria-hidden="true" id="s1"></span>
+                    <span class="fa fa-star" id="s2"></span>
+                    <span class="fa fa-star" id="s3"></span>
+                    <span class="fa fa-star" id="s4"></span>
+                    <span class="fa fa-star" id="s5"></span>
+                </div>
+                <br>
+                <textarea class="feedback_textarea" rows="7" cols="40" placeholder="Write your opinion Here"></textarea><br>
+                <div class="form-k"><br>
+                <input type="button" name="btnsubmit" class="button-k btn btn-primary" value="Send Feedback"></div>
+                
+            
+            </form>
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript">   
+        $(document).ready(function(){
+            $("#s1").click(function(){
+                $(".fa-star").css("color","black")
+                $("#s1").css("color","orange")
+            })
+            $("#s2").click(function(){
+                $(".fa-star").css("color","black")
+                $("#s1,#s2").css("color","orange")
+            })
+            $("#s3").click(function(){
+                $(".fa-star").css("color","black")
+                $("#s1,#s2,#s3").css("color","orange")
+            })
+            $("#s4").click(function(){
+                $(".fa-star").css("color","black")
+                $("#s1,#s2,#s3,#s4").css("color","prange")
+            })
+            $("#s5").click(function(){
+                $(".fa-star").css("color","black")
+                $(".fa-star").css("color","orange")
+            })
+        })
+</script>
+    <!-- ============= End Container COMPONENT ============== -->
+
+    <!-- ============= Footer COMPONENT ============== -->
+    
+    <!--    Yuran code -->
+    <footer class="footer fixed-bottom">
+        <p class="pull-left">©- 2022 : Circus Restaurant</p>
+        <div class="pull-right">
+            <div class="d-flex justify-content-end">
+                <a class="nav-link " href="https://www.facebook.com/login.php"><i class="fa fa-facebook "></i></a>
+                <a class="nav-link " href="https://twitter.com/i/flow/login"><i class="fa fa-twitter "></i></a>
+                <a class="nav-link " href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram "></i></a>
+                <a class="nav-link " href="https://www.youtube.com/"><i class="fa fa-youtube "></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ============= End Footer COMPONENT ============== -->
+
+</body>
+
+</html>
